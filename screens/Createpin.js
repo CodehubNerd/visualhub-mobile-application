@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { View, SafeAreaView, FlatList } from "react-native";
 function Createpin() {
   return (
-    <div>Createpin</div>
+    <View></View>
   )
 }
 
