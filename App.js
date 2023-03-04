@@ -9,28 +9,16 @@ import Pindetailts from "./screens/Pindetailts";
 import Createpin from "./screens/Createpin";
 
 
-const theme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-    background: "transparent",
-  },
-};
 
 const Stack = createStackNavigator();
 
 
 const App = () => {
-  const [loaded] = useFonts({
-    RobotoLight: require("./assets/fonts/Roboto-Light.ttf"),
-    RobotoRegular: require("./assets/fonts/Roboto-Regular.ttf"),
-    RobotoThin: require("./assets/fonts/Roboto-Thin.ttf"),
-  });
-  
-  if (!loaded) return null;
+ 
+ 
 
   return (
-    <NavigationContainer theme={theme}>
+    <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
